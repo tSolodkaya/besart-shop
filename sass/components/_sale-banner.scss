@@ -1,0 +1,47 @@
+.sale-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 0;
+
+  background-image: url("../../images/bg-images/Bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../images/bg-images/Bg@2x.jpg");
+  }
+
+  color: $liht-color;
+  background-color: $dark-color;
+}
+
+.sale-banner__title,
+.sale-banner__link {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sale-banner__title {
+  margin-right: 10px;
+}
+
+.sale-banner__percent {
+  padding: 3px 6px 3px 5px;
+  margin-right: 25px;
+
+  font-style: italic;
+  font-weight: 700;
+  color: $accent-color;
+
+  background-color: $background-color;
+  border-radius: 92px;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+}

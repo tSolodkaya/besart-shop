@@ -1,0 +1,14 @@
+.gender-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.gender__button {
+  color: $dark-color-opacity;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--active {
+    color: $dark-color;
+  }
+}

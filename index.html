@@ -5,7 +5,975 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BESART</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="sale-banner container">
+      <h2 class="sale-banner__title">Premium SALE</h2>
+      <p class="sale-banner__percent">-50%</p>
+      <a class="sale-banner__link" href="#"
+        >View more
+        <svg class="arrow-icon" width="17" height="12">
+          <use href="./images/icons/icons.svg#arrow-right"></use>
+        </svg>
+      </a>
+    </section>
+
+    <header class="container">
+      <div class="header-wrap">
+        <div class="header-line-wrap header-line-wrap--margin">
+          <ul class="gender-buttons">
+            <li class="gender-buttons__item">
+              <button class="gender__button gender__button--active">
+                Woman
+              </button>
+            </li>
+            <li class="gender-buttons__item">
+              <button class="gender__button">Man</button>
+            </li>
+            <li class="gender-buttons__item">
+              <button class="gender__button">Kids</button>
+            </li>
+          </ul>
+          <div aria-label="site logo bisart">
+            <a class="logo">
+              <svg width="130" height="28">
+                <use href="./images/icons/icons.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="user-menu">
+            <li
+              class="user-menu__item user-menu__item--border"
+              aria-label="wish list"
+            >
+              <a class="user-menu__link" href="#">
+                <svg width="18" height="17">
+                  <use href="./images/icons/icons.svg#wish"></use>
+                </svg>
+                <p class="user-menu__count">8</p>
+              </a>
+            </li>
+
+            <li class="user-menu__item" aria-label="user profile">
+              <a class="user-menu__link" href="#">
+                <svg width="16" height="20">
+                  <use href="./images/icons/icons.svg#profile"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="user-menu__item" aria-label="shopping cart">
+              <a class="user-menu__link" href="#">
+                <svg width="15" height="20">
+                  <use href="./images/icons/icons.svg#cart"></use>
+                </svg>
+                <p class="user-buttons__count">3</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-line-wrap">
+          <form class="search-form">
+            <button aria-label="search button">
+              <svg width="16" height="16">
+                <use href="./images/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+
+            <input
+              class="search-input"
+              type="text"
+              aria-label="search field"
+              name="search"
+              placeholder="Search"
+            />
+          </form>
+          <nav>
+            <ul class="menu-navigation">
+              <li class="menu-navigation__item"><a href="#">NEWS&Sales</a></li>
+              <li class="menu-navigation__item"><a href="#">Clothing</a></li>
+              <li class="menu-navigation__item"><a href="#">Shoes</a></li>
+              <li class="menu-navigation__item"><a href="#">Accessories</a></li>
+              <li class="menu-navigation__item"><a href="#">Bags</a></li>
+              <li class="menu-navigation__item"><a href="#">Jewelry</a></li>
+              <li class="menu-navigation__item"><a href="#">Brands</a></li>
+              <li class="menu-navigation__item"><a href="#">All Women's</a></li>
+            </ul>
+          </nav>
+
+          <form>
+            <select class="dropdown" name="currency">
+              <option class="dropdown__option" value="usd" selected>
+                USD &dollar;
+              </option>
+              <option class="dropdown__option" value="eur">EUR &euro;</option>
+              <option class="dropdown__option" value="gbr">GBR &pound;</option>
+            </select>
+
+            <select class="dropdown" name="information">
+              <option value="info" selected>info</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="baner">
+      <div class="container">
+        <div>
+          <a href="#">
+            <article>
+              <picture>
+                <source srcset=""/>
+                <source />
+                <img src="" alt="" />
+              </picture>
+              <div>
+                <h3>Handbag</h3>
+                <p>Liviana Conti</p>
+                <ul>
+                  <li>color</li>
+                </ul>
+                <p>210$</p>
+                <p>134$</p>
+              </div>
+            </article></a
+          >
+          <a>
+            <article>
+              <picture>
+                <source />
+                <source />
+                <img src="" alt="" />
+                <div>
+                  <h3>Glasses</h3>
+                  <p>Balmain</p>
+                  <ul>
+                    <li>color</li>
+                    <li>color</li>
+                  </ul>
+                  <p>210$</p>
+                  <p>134$</p>
+                </div>
+              </picture>
+              <div>
+                <h3>Cotton shirt</h3>
+                <p>Polo Ralph Lauren</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <ul>
+                  <li>xs</li>
+                  <li>s</li>
+                  <li>m</li>
+                </ul>
+                <p>149$</p>
+                <p>99$</p>
+              </div>
+            </article></a
+          >
+        </div>
+        <div>
+          <h2>Summer women’s</h2>
+          <p>BRAND jeans <span>-35%</span></p>
+          <p>
+            Pull&Bear, H&M, Zara, Bershka, New Yorker,Reserved, Colin’s, Asos
+          </p>
+          <a href="#"
+            >Shop now
+            <svg width="17" height="12">
+              <use href="./images/icons/"></use>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <article>
+            <picture>
+              <source />
+              <source />
+              <img src="" alt="" />
+            </picture>
+            <div>
+              <h3>Cotton shirt</h3>
+              <p>Polo Ralph Lauren</p>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>xs</li>
+                <li>s</li>
+                <li>m</li>
+              </ul>
+              <p>149$</p>
+              <p>99$</p>
+            </div>
+          </article>
+          <article>
+            <picture>
+              <source />
+              <source />
+              <img src="" alt="" />
+            </picture>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <ul class="brands">
+        <li>
+          <svg width="215" height="30">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="215" height="30">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="136" height="30">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="82" height="40">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="82" height="40">
+            <use></use>
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="167" height="26">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="25" height="28">
+            <use href="./images/icons/"></use>
+          </svg>
+          <svg width="33" height="28">
+            <use href="./images/icons/"></use>
+          </svg>
+          <svg width="30" height="28">
+            <use href="./images/icons/"></use>
+          </svg>
+          <svg width="33" height="28">
+            <use href="./images/icons/"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+
+    <section class="women">
+      <ul>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Shorts</h3>
+                <p>Calvin Klein Jeans</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <ul>
+                  <li>xs</li>
+                  <li>s</li>
+                  <li>m</li>
+                </ul>
+                <p>40$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Dress</h3>
+                <p>Vero Moda</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>xs</li>
+                    <li>s</li>
+                    <li>m</li>
+                  </ul>
+                </ul>
+                <p>89$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Bra</h3>
+                <p>Calvin Klein — Bathing</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>All</li>
+                  </ul>
+                </ul>
+                <p>39$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <div>
+            <h3>Show all Womens Clothes</h3>
+            <a href="#"
+              >SHOP NOW
+              <svg width="17" height="12">
+                <use href="./images/icons/"></use>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="men">
+      <ul>
+        <li>
+          <div>
+            <h3>Show all mens Clothes</h3>
+            <a href="#"
+              >SHOP NOW
+              <svg width="17" height="12">
+                <use href="./images/icons/"></use>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Shirt</h3>
+                <p>Medicine — Basic</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <ul>
+                  <li>All</li>
+                </ul>
+                <p>40$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Shorts</h3>
+                <p>Medicine — Summer Heat</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>xs</li>
+                    <li>s</li>
+                    <li>m</li>
+                  </ul>
+                </ul>
+                <p>24$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Jacket</h3>
+                <p>Medicine — Casual Elegance</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>All</li>
+                  </ul>
+                </ul>
+                <p>249$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="quote">
+      <h2 class=".visually-hidden">Section with Product designer's qoute</h2>
+      <div>
+        <article></article>
+        <article></article>
+      </div>
+      <div>
+        <blockquote>
+          I place the notion of creativityat the same level as thatof
+          craftmanship, but bothgive the way to the humandimension that is at
+          the heartof my Work.
+        </blockquote>
+        <p>Scotty Lauren</p>
+        <p>Product designer</p>
+      </div>
+    </section>
+
+    <section class="kids">
+      <ul>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Shorts</h3>
+                <p>Calvin Klein Jeans</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <ul>
+                  <li>xs</li>
+                  <li>s</li>
+                  <li>m</li>
+                </ul>
+                <p>40$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Dress</h3>
+                <p>Vero Moda</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>xs</li>
+                    <li>s</li>
+                    <li>m</li>
+                  </ul>
+                </ul>
+                <p>89$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <div>
+            <h3>Show all kids Clothes</h3>
+            <a href="#"
+              >SHOP NOW
+              <svg width="17" height="12">
+                <use href="./images/icons/"></use>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <picture></picture>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <article>
+              <picture></picture>
+              <div>
+                <h3>Bra</h3>
+                <p>Calvin Klein — Bathing</p>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <ul>
+                    <li>All</li>
+                  </ul>
+                </ul>
+                <p>39$</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="lookbook">
+      <ul>
+        <li>
+          <picture></picture>
+        </li>
+        <li>
+          <picture></picture>
+        </li>
+        <li>
+          <picture></picture>
+        </li>
+        <li>
+          <picture></picture>
+        </li>
+      </ul>
+      <div>
+        <h2>Summer women’s</h2>
+        <p>Lookbook<span>-35%</span></p>
+        <p>Pull&Bear, H&M, Zara, Bershka, New Yorker,Reserved, Colin’s, Asos</p>
+        <a href="#"
+          >Shop now
+          <svg width="17" height="12">
+            <use href="./images/icons/"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="top-products">
+      <ul>
+        <li>
+          <a href="#">
+            <picture></picture>
+            <h3>Dress</h3>
+            <p>Samsoe Samsoe</p>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li>All</li>
+            </ul>
+            <p>230$</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <picture></picture>
+            <h3>Dress</h3>
+            <p>Miss Sixty</p>
+            <ul>
+              <li></li>
+            </ul>
+            <ul>
+              <li>All</li>
+            </ul>
+            <p>289$</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <picture></picture>
+            <h3>Leather sandals ITALIA</h3>
+            <p>Mango</p>
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul>
+              <li>All</li>
+            </ul>
+            <p>79$</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <picture></picture>
+            <h3>Blouse</h3>
+            <p>Bardot</p>
+            <ul>
+              <li></li>
+            </ul>
+            <ul>
+              <li>s</li>
+              <li>m</li>
+            </ul>
+            <p>229$</p>
+            <p>199$</p>
+          </a>
+        </li>
+      </ul>
+      <button>
+        <svg width="163" height="163">
+          <use href="./images/icons"></use>
+        </svg>
+      </button>
+    </section>
+
+    <section class="dresses">
+      <ul>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>Essential dress</h3>
+              <p>Medicine</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>xs</li>
+                <li>s</li>
+                <li>m</li>
+              </ul>
+              <p>40$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>Dress</h3>
+              <p>Vero Moda</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>xs</li>
+                <li>s</li>
+                <li>m</li>
+              </ul>
+              <p>89$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>Dress</h3>
+              <p>Balmain</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>All</li>
+                <li></li>
+                <li></li>
+              </ul>
+              <p>39$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <div>
+            <h3>Show all dresses</h3>
+            <a href="#"
+              >SHOP NOW
+              <svg width="17" height="12">
+                <use href="'./images/icons"></use>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#"> <picture></picture></a>
+            </li>
+            <li>
+              <a href="#"> <picture></picture></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sports">
+      <div>
+        <h2>Match</h2>
+        <p>Sporty</p>
+        <p>aesthetics</p>
+        <span>-35%</span>
+        <p>
+          Running shoes for a walk around the city or bicyclesto the office? Why
+          not! Our stylists offer not to be afraidto mix sports things with
+          everyday ones.
+        </p>
+        <a href="#"
+          >Shop now
+          <svg width="17" height="12">
+            <use href="./images/icons/"></use>
+          </svg>
+        </a>
+      </div>
+      <div>
+        <picture></picture>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>Shoes</h3>
+              <p>Reebok — Zig Kinetica II</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>38</li>
+                <li>39</li>
+                <li>40</li>
+              </ul>
+              <p>229$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>shirt</h3>
+              <p>Mango — BRISA</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>All</li>
+              </ul>
+              <p>229$</p>
+              <p>129$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>shorts</h3>
+              <p>Mango — SPORTY</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>All</li>
+              </ul>
+              <p>39$</p>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+              <h3>Sports bra</h3>
+              <p>LaBellaMafia</p>
+              <ul>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul>
+                <li>All</li>
+              </ul>
+              <p>29$</p>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="recent-posts">
+      <ul>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <article>
+              <picture></picture>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>
+        <picture></picture>
+        <a href="#">
+          <svg width="158" height="34">
+            <use href="'./images/icons"></use>
+          </svg>
+        </a>
+        <div>
+          <p>Book Virtual Appointment 800.691.0952</p>
+          <p>support@besart.shop</p>
+        </div>
+
+        <div>
+          <form>
+            <label for="subscribe"></label>
+            <input type="email" id="subscribe" placeholder="YOUR E-MAIL" />
+            <button type="submit">
+              <svg width="22" height="14">
+                <use href="'./images/icons"></use>
+              </svg>
+              Subscribe
+            </button>
+          </form>
+
+          <div>
+            <div>
+              <h4>HELP AND INFO</h4>
+              <ul>
+                <li><a href="#">Returns and complaints</a></li>
+                <li><a href="#">DELIVERY & Payment</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Cooperation</h4>
+              <ul>
+                <li><a href="#">BRAND FILES</a></li>
+                <li><a href="#">DELIVERY & Payment</a></li>
+                <li><a href="#">About BESART</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Follow us</h4>
+              <ul>
+                <li aria-label="instagram">
+                  <a href="#">
+                    <svg>
+                      <use></use>
+                    </svg>
+                  </a>
+                </li>
+                <li aria-label="facebook"><a href="#"></a></li>
+                <li aria-label="twitter"><a href="#"></a></li>
+                <li aria-label="pinterest"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <select name="language">
+              <option value="en" selected>ENG</option>
+              <option value="dth">DTH</option>
+            </select>
+
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+
+          <div>
+            <div>
+              <p>Made with looove</p>
+              <p>Scotty Lauren</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

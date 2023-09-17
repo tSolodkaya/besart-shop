@@ -1,0 +1,14 @@
+.dropdown {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
