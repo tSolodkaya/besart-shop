@@ -1,4 +1,204 @@
 .baner {
-  padding: 0 80px;
   background-color: $background-color;
+}
+
+.baner-wrap {
+  padding: 0 80px;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 480px;
+}
+
+.card-prime {
+  position: absolute;
+
+  &--left-side {
+    top: 60px;
+  }
+
+  &--right-side {
+    top: 177px;
+    right: 66px;
+    z-index: 3;
+  }
+
+  padding: 5px 5px 0 5px;
+  width: 235px;
+  background-color: $accent-color;
+  border-radius: 5px;
+}
+
+.card-prime__img {
+  margin: 0 auto;
+}
+
+.card-prime__meta {
+  padding: 12px 14px 11px 15px;
+  color: $liht-color;
+}
+
+.card-prime__title,
+.card-prime__old-price,
+.card-ligth__title,
+.card-ligth__old-price {
+  opacity: 0.5;
+}
+
+.card-prime__brand,
+.card-ligth__brand,
+.card-prime__new-price,
+.card-ligth__new-price {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--margin {
+    margin-bottom: 4px;
+  }
+}
+
+.card-prime__old-price,
+.card-ligth__old-price {
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.prime-colors,
+.ligth-colors,
+.light-sizes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prime-colors__item,
+.ligth-colors__item {
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+
+  &--border {
+    border: 2px solid $liht-color;
+  }
+
+  &--brown {
+    background-color: $colors-list-item-4;
+  }
+
+  &--green {
+    background-color: $colors-list-item-1;
+  }
+
+  &--purple {
+    background-color: $colors-list-item-5;
+  }
+}
+
+.color-price-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.card-ligth {
+  position: absolute;
+
+  &--left-side {
+    top: 180px;
+    left: 229px;
+  }
+
+  &--right-side {
+    right: 196px;
+    top: 55px;
+  }
+
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-ligth__meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0 20px 20px 20px;
+  color: $liht-color;
+}
+
+.light-sizes__item {
+  font-size: 14px;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background: $card-overlay;
+  opacity: 0.5;
+}
+
+.baner__info {
+  max-width: 534px;
+  text-align: center;
+}
+
+.baner__title {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.baner__subtite {
+  font-family: $accent-font-style;
+  font-size: 56px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom: 14px;
+}
+
+.baner__brands {
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.baner__percent {
+  color: $background-color;
+  font-family: $primary-font-style;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: $accent-color;
+  border-radius: 132px;
+  padding: 6px 7px 4px 8px;
 }

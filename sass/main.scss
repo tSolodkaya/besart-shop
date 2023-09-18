@@ -2,6 +2,8 @@
 @import "./base/base";
 @import "./helpers/_placeholders";
 @import "./utils/visually-hidden";
+@import "./components/links";
+@import "./components/price-colors";
 @import "./components/sale-banner";
 @import "./components/header";
 @import "./components/dropdown";
@@ -10,3 +12,5 @@
 @import "./components/gender-menu";
 @import "./components/navigation";
 @import "./components/baner";
+@import "./components/brands";
+@import "./components/fashion-card";

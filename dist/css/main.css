@@ -53,6 +53,10 @@ button {
   margin: 0 auto;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -65,6 +69,36 @@ button {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.shop-link {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.shop-link--font {
+  font-size: 16px;
+}
+
+.color-link {
+  max-width: 198px;
+  margin: 0 auto;
+  border-radius: 84px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.color-link--baner-style {
+  background-color: #491e4b;
+  color: #eee9dc;
+  padding: 14px 30px 14px 20px;
+}
+
+.arrow-icon--sale-baner-style {
+  stroke: #fff;
+  margin-left: 10px;
+}
+.arrow-icon--baner-style {
+  margin-left: 33px;
+  stroke: #eee9dc;
 }
 
 .sale-banner {
@@ -109,10 +143,6 @@ button {
   color: #491e4b;
   background-color: #eee9dc;
   border-radius: 92px;
-}
-
-.arrow-icon {
-  margin-left: 10px;
 }
 
 .header-wrap {
@@ -295,6 +325,250 @@ button {
 }
 
 .baner {
-  padding: 0 80px;
   background-color: #eee9dc;
+}
+
+.baner-wrap {
+  padding: 0 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 480px;
+}
+
+.card-prime {
+  position: absolute;
+  padding: 5px 5px 0 5px;
+  width: 235px;
+  background-color: #491e4b;
+  border-radius: 5px;
+}
+.card-prime--left-side {
+  top: 60px;
+}
+.card-prime--right-side {
+  top: 177px;
+  right: 66px;
+  z-index: 3;
+}
+
+.card-prime__img {
+  margin: 0 auto;
+}
+
+.card-prime__meta {
+  padding: 12px 14px 11px 15px;
+  color: #fff;
+}
+
+.card-prime__title,
+.card-prime__old-price,
+.card-ligth__title,
+.card-ligth__old-price {
+  opacity: 0.5;
+}
+
+.card-prime__brand,
+.card-ligth__brand,
+.card-prime__new-price,
+.card-ligth__new-price {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.card-prime__brand--margin,
+.card-ligth__brand--margin,
+.card-prime__new-price--margin,
+.card-ligth__new-price--margin {
+  margin-bottom: 4px;
+}
+
+.card-prime__old-price,
+.card-ligth__old-price {
+  margin-right: 5px;
+  font-style: italic;
+}
+
+.prime-colors,
+.ligth-colors,
+.light-sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prime-colors__item:not(:last-child),
+.ligth-colors__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.color-box--border {
+  border: 2px solid #fff;
+}
+.color-box--brown {
+  background-color: #b92121;
+}
+.color-box--green {
+  background-color: #1fc71f;
+}
+.color-box--purple {
+  background-color: #c20ac2;
+}
+
+.color-price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.card-ligth {
+  position: absolute;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card-ligth--left-side {
+  top: 180px;
+  left: 229px;
+}
+.card-ligth--right-side {
+  right: 196px;
+  top: 55px;
+}
+
+.card-ligth__meta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0 20px 20px 20px;
+  color: #fff;
+}
+
+.light-sizes__item {
+  font-size: 14px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.light-sizes__item:not(:last-child) {
+  margin-right: 7px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 12, 34, 0)), to(#000d21));
+  background: linear-gradient(180deg, rgba(0, 12, 34, 0), #000d21);
+  opacity: 0.5;
+}
+
+.baner__info {
+  max-width: 534px;
+  text-align: center;
+}
+
+.baner__title {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.baner__subtite {
+  font-family: "Architects Daughter", cursive;
+  font-size: 56px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom: 14px;
+}
+
+.baner__brands {
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.baner__percent {
+  color: #eee9dc;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #491e4b;
+  border-radius: 132px;
+  padding: 6px 7px 4px 8px;
+}
+
+.brands {
+  padding: 120px 140px 25px 140px;
+}
+
+.brands,
+.brands-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brands-list {
+  width: 100%;
+  margin-right: 35px;
+}
+
+.brands__count {
+  padding-left: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  color: #491e4b;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.fashion-card {
+  width: 398px;
 }/*# sourceMappingURL=main.css.map */

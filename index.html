@@ -17,9 +17,13 @@
     <section class="sale-banner container">
       <h2 class="sale-banner__title">Premium SALE</h2>
       <p class="sale-banner__percent">-50%</p>
-      <a class="sale-banner__link" href="#"
+      <a class="shop-link shop-link--font" href="#"
         >View more
-        <svg class="arrow-icon" width="17" height="12">
+        <svg
+          class="arrow-icon arrow-icon--sale-baner-style"
+          width="17"
+          height="12"
+        >
           <use href="./images/icons/icons.svg#arrow-right"></use>
         </svg>
       </a>
@@ -74,7 +78,7 @@
                 <svg width="15" height="20">
                   <use href="./images/icons/icons.svg#cart"></use>
                 </svg>
-                <p class="user-buttons__count">3</p>
+                <p class="user-menu__count">3</p>
               </a>
             </li>
           </ul>
@@ -125,171 +129,311 @@
       </div>
     </header>
 
-    <section class="baner">
-      <div class="container">
+    <section class="baner container">
+      <div class="baner-wrap">
         <div>
           <a href="#">
-            <article>
+            <article class="card-prime card-prime--left-side">
               <picture>
-                <source srcset=""/>
-                <source />
-                <img src="" alt="" />
+                <source
+                  srcset="
+                    ./images/baner/Pattern-fill-204d95@1x.jpg 1x,
+                    ./images/baner/Pattern-fill-204d95@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/baner/Pattern-fill-204d95@1x.webp 1x,
+                    ./images/baner/Pattern-fill-204d95@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="card-prime__img"
+                  src="./images/baner/Pattern-fill-204d95@1x.jpg"
+                  alt="woman's brown bag"
+                />
               </picture>
-              <div>
-                <h3>Handbag</h3>
-                <p>Liviana Conti</p>
-                <ul>
-                  <li>color</li>
-                </ul>
-                <p>210$</p>
-                <p>134$</p>
+              <div class="card-prime__meta">
+                <h3 class="card-prime__title">Handbag</h3>
+                <p class="card-prime__brand">Liviana Conti</p>
+                <div class="color-price-wrap">
+                  <ul class="prime-colors">
+                    <li class="prime-colors__item" aria-label="brown">
+                      <div class="color-box color-box--brown"></div>
+                    </li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="card-prime__old-price"><del>210$</del></p>
+                    <p class="card-prime__new-price">134$</p>
+                  </div>
+                </div>
               </div>
             </article></a
           >
-          <a>
-            <article>
+          <a href="#">
+            <article class="card-ligth card-ligth--left-side">
+              <div class="overlay"></div>
               <picture>
-                <source />
-                <source />
-                <img src="" alt="" />
-                <div>
-                  <h3>Glasses</h3>
-                  <p>Balmain</p>
-                  <ul>
-                    <li>color</li>
-                    <li>color</li>
-                  </ul>
-                  <p>210$</p>
-                  <p>134$</p>
-                </div>
+                <source
+                  srcset="
+                    ./images/baner/Photo.jpg    1x,
+                    ./images/baner/Photo@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/baner/Photo.webp    1x,
+                    ./images/baner/Photo@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src=" ./images/baner/Photo.jpg"
+                  alt="woman in white shirt"
+                />
               </picture>
-              <div>
-                <h3>Cotton shirt</h3>
-                <p>Polo Ralph Lauren</p>
-                <ul>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <ul>
-                  <li>xs</li>
-                  <li>s</li>
-                  <li>m</li>
-                </ul>
-                <p>149$</p>
-                <p>99$</p>
+              <div class="card-ligth__meta">
+                <h3 class="card-ligth__title">Cotton shirt</h3>
+                <p class="card-ligth__brand card-ligth__brand--margin">
+                  Polo Ralph Lauren
+                </p>
+                <div class="color-price-wrap">
+                  <ul class="ligth-colors">
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--brown"
+                      ></div>
+                    </li>
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--green"
+                      ></div>
+                    </li>
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--purple"
+                      ></div>
+                    </li>
+                  </ul>
+                  <ul class="light-sizes">
+                    <li class="light-sizes__item">xs</li>
+                    <li class="light-sizes__item">s</li>
+                    <li class="light-sizes__item">m</li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="card-ligth__old-price"><del>149$</del></p>
+                    <p class="card-ligth__new-price">99$</p>
+                  </div>
+                </div>
               </div>
             </article></a
           >
         </div>
-        <div>
-          <h2>Summer women’s</h2>
-          <p>BRAND jeans <span>-35%</span></p>
-          <p>
-            Pull&Bear, H&M, Zara, Bershka, New Yorker,Reserved, Colin’s, Asos
+        <div class="baner__info">
+          <h2 class="baner__title">Summer women’s</h2>
+          <p class="baner__subtite">
+            <span class="underline">BRAND jeans</span>
+            <span class="baner__percent">-35%</span>
           </p>
-          <a href="#"
+          <p class="baner__brands">
+            Pull&Bear, H&M, Zara, Bershka, New Yorker, <br />Reserved, Colin’s,
+            Asos
+          </p>
+          <a class="color-link color-link--baner-style" href="#"
             >Shop now
-            <svg width="17" height="12">
-              <use href="./images/icons/"></use>
+            <svg
+              class="arrow-icon arrow-icon--baner-style"
+              width="17"
+              height="12"
+            >
+              <use href="./images/icons/icons.svg#arrow-right"></use>
             </svg>
           </a>
         </div>
         <div>
-          <article>
-            <picture>
-              <source />
-              <source />
-              <img src="" alt="" />
-            </picture>
-            <div>
-              <h3>Cotton shirt</h3>
-              <p>Polo Ralph Lauren</p>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>xs</li>
-                <li>s</li>
-                <li>m</li>
-              </ul>
-              <p>149$</p>
-              <p>99$</p>
-            </div>
-          </article>
-          <article>
-            <picture>
-              <source />
-              <source />
-              <img src="" alt="" />
-            </picture>
-          </article>
+          <a href="#">
+            <article class="card-ligth card-ligth--right-side">
+              <div class="overlay"></div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/baner/header-4@1x.jpg 1x,
+                    ./images/baner/header-4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/baner/header-4@1x.webp 1x,
+                    ./images/baner/header-4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src=" ./images/baner/header-4@1x.jpg"
+                  alt="woman in white shirt"
+                />
+              </picture>
+              <div class="card-ligth__meta">
+                <h3 class="card-ligth__title">Cotton shirt</h3>
+                <p class="card-ligth__brand card-ligth__brand--margin">
+                  Polo Ralph Lauren
+                </p>
+                <div class="color-price-wrap">
+                  <ul class="ligth-colors">
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--brown"
+                      ></div>
+                    </li>
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--green"
+                      ></div>
+                    </li>
+                    <li class="ligth-colors__item">
+                      <div
+                        class="color-box color-box--border color-box--purple"
+                      ></div>
+                    </li>
+                  </ul>
+                  <ul class="light-sizes">
+                    <li class="light-sizes__item">xs</li>
+                    <li class="light-sizes__item">s</li>
+                    <li class="light-sizes__item">m</li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="card-ligth__old-price">149$</p>
+                    <p class="card-ligth__new-price">99$</p>
+                  </div>
+                </div>
+              </div>
+            </article></a
+          >
+          <a href="#">
+            <article class="card-prime card-prime--right-side">
+              <picture>
+                <source
+                  srcset="
+                    ./images/baner/header-3@1x.jpg 1x,
+                    ./images/baner/header-3@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/baner/header-3@1x.webp 1x,
+                    ./images/baner/header-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="card-prime__img"
+                  src=" ./images/baner/header-3@1x.jpg"
+                  alt="black glasses"
+                />
+              </picture>
+              <div class="card-prime__meta">
+                <h3 class="card-prime__title">Glasses</h3>
+                <p class="card-prime__brand">Balmain</p>
+                <div class="color-price-wrap">
+                  <ul class="prime-colors">
+                    <li class="prime-colors__item" aria-label="color">
+                      <div class="color-box color-box--brown"></div>
+                    </li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="card-prime__old-price"><del>210$</del></p>
+                    <p class="card-prime__new-price">134$</p>
+                  </div>
+                </div>
+              </div>
+            </article></a
+          >
         </div>
       </div>
     </section>
 
     <section class="brands">
-      <ul class="brands">
-        <li>
-          <svg width="215" height="30">
-            <use href="./images/icons/"></use>
-          </svg>
+      <ul class="brands-list">
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="215" height="30">
+              <use href="./images/icons/icons.svg#adidas"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="215" height="30">
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="215" height="30">
+              <use href="./images/icons/icons.svg#asos"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="136" height="30">
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="136" height="30">
+              <use href="./images/icons/icons.svg#bershka"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="82" height="40">
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="82" height="40">
+              <use href="./images/icons/icons.svg#levis"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="82" height="40">
-            <use></use>
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="82" height="40">
+              <use></use>
+              <use href="./images/icons/icons.svg#nike"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="167" height="26">
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <svg width="167" height="26">
+              <use href="./images/icons/icons.svg#pull-bear"></use>
+            </svg>
+          </a>
         </li>
-        <li>
-          <svg width="25" height="28">
-            <use href="./images/icons/"></use>
-          </svg>
-          <svg width="33" height="28">
-            <use href="./images/icons/"></use>
-          </svg>
-          <svg width="30" height="28">
-            <use href="./images/icons/"></use>
-          </svg>
-          <svg width="33" height="28">
-            <use href="./images/icons/"></use>
-          </svg>
+        <li class="brands-list__item">
+          <a href="#">
+            <div>
+              <svg width="25" height="28">
+                <use href="./images/icons/icons.svg#zara-z"></use>
+              </svg>
+              <svg width="33" height="28">
+                <use href="./images/icons/icons.svg#zara-a"></use>
+              </svg>
+              <svg width="30" height="28">
+                <use href="./images/icons/icons.svg#zara-r"></use>
+              </svg>
+              <svg width="33" height="28">
+                <use href="./images/icons/icons.svg#zara-a"></use>
+              </svg>
+            </div>
+          </a>
         </li>
       </ul>
+      <a href="#"><p class="brands__count">+19</p></a>
     </section>
 
     <section class="women">
       <ul>
         <li>
-          <a href="">
-            <article>
+          <a href="#">
+            <article class="fashion-card">
               <picture></picture>
               <div>
-                <h3>Shorts</h3>
-                <p>Calvin Klein Jeans</p>
-                <ul>
+                <h3 class="fashion-card__product">Shorts</h3>
+                <p class="fashion-card__brand">Calvin Klein Jeans</p>
+                <ul class="">
                   <li></li>
                   <li></li>
                 </ul>

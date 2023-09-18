@@ -1,0 +1,36 @@
+.shop-link {
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--font {
+    font-size: 16px;
+  }
+}
+
+.color-link {
+  max-width: 198px;
+  margin: 0 auto;
+
+  border-radius: 84px;
+
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--baner-style {
+    background-color: $accent-color;
+    color: $background-color;
+    padding: 14px 30px 14px 20px;
+  }
+}
+
+.arrow-icon {
+  &--sale-baner-style {
+    stroke: $liht-color;
+    margin-left: 10px;
+  }
+
+  &--baner-style {
+    margin-left: 33px;
+    stroke: $background-color;
+  }
+}

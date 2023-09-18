@@ -1,0 +1,25 @@
+.brands {
+  padding: 120px 140px 25px 140px;
+}
+
+.brands,
+.brands-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands-list {
+  width: 100%;
+  margin-right: 35px;
+}
+
+.brands__count {
+  padding-left: 20px;
+  border-left: 1px solid $border-color;
+
+  color: $accent-color;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
