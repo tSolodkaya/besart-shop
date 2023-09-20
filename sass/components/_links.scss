@@ -16,10 +16,14 @@
   font-weight: 500;
   text-transform: uppercase;
 
-  &--baner-style {
+  &--primary {
     background-color: $accent-color;
     color: $background-color;
     padding: 14px 30px 14px 20px;
+  }
+
+  &--lookbook {
+    margin: 0;
   }
 }
 
@@ -32,5 +36,10 @@
   &--baner-style {
     margin-left: 33px;
     stroke: $background-color;
+  }
+
+  &--black {
+    stroke: $dark-color;
+    margin-left: 20px;
   }
 }

@@ -1,0 +1,129 @@
+.card-meta {
+  &--prime {
+    padding: 12px 14px 11px 15px;
+    color: $liht-color;
+  }
+
+  &--light {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+
+    padding: 0 20px 23px 20px;
+
+    color: $liht-color;
+  }
+
+  &--fashion {
+    color: $dark-color;
+    padding-top: 20px;
+  }
+}
+
+.card-meta__product {
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.card-meta__brand {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--prime {
+    margin-bottom: 3px;
+  }
+
+  &--light,
+  &--fashion {
+    margin-bottom: 11px;
+  }
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+
+  padding-right: 15px;
+  border-right: 1px solid $border-color;
+
+  &--prime {
+    border-right: none;
+  }
+}
+
+.colors__item {
+  &--light {
+    border: 2px solid $liht-color;
+    border-radius: 3px;
+  }
+}
+.color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+
+  &--grey {
+    background-color: grey;
+  }
+
+  &--black {
+    background-color: black;
+  }
+
+  &--green {
+    background-color: green;
+  }
+
+  &--red {
+    background-color: red;
+  }
+
+  &--yellow {
+    background-color: yellow;
+  }
+}
+
+.sizes {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+
+  margin-left: 15px;
+}
+
+.sizes__item {
+  font-size: 16px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.color-price-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.price-wrap {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+
+.new-price {
+  font-size: 24px;
+  font-weight: 500;
+
+  &--light {
+    color: $liht-color;
+  }
+}
+
+.old-price {
+  margin-right: 5px;
+  font-style: italic;
+  opacity: 0.5;
+}

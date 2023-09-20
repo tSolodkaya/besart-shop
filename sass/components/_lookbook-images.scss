@@ -1,0 +1,45 @@
+.lookbook-images-wrap {
+  align-self: flex-start;
+}
+
+.lookbook-list {
+  width: 812px;
+  height: 600px;
+  position: relative;
+}
+
+.lookbook-list__image {
+  position: absolute;
+
+  &--first {
+    bottom: 59px;
+    right: 48px;
+    z-index: 2;
+
+    width: 398px;
+  }
+
+  &--second {
+    top: -28px;
+    left: 0;
+    z-index: 1;
+
+    width: 447px;
+  }
+
+  &--third {
+    bottom: -41px;
+    left: 124px;
+    z-index: 3;
+
+    width: 398px;
+  }
+
+  &--forth {
+    top: 33px;
+    left: 688px;
+    z-index: 4;
+
+    width: 124px;
+  }
+}
