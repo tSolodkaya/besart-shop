@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BESART</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -130,7 +137,7 @@
     </header>
 
     <section class="baner container">
-      <div class="baner-wrap">
+      <div class="baner-wrap baner-wrap--jeans-height">
         <div>
           <a href="#">
             <article class="card-prime card-prime--left-side">
@@ -239,7 +246,7 @@
             Pull&Bear, H&M, Zara, Bershka, New Yorker, <br />Reserved, Colin’s,
             Asos
           </p>
-          <a class="color-link color-link--primary" href="#"
+          <a class="color-link color-link--primary color-link--centred" href="#"
             >Shop now
             <svg
               class="arrow-icon arrow-icon--baner-style"
@@ -350,6 +357,7 @@
     </section>
 
     <section class="brands container">
+      <h2 class="visually-hidden">Brands section</h2>
       <ul class="brands-list">
         <li class="brands-list__item">
           <a href="#">
@@ -417,6 +425,7 @@
     </section>
 
     <section class="products products--bottom-line container">
+      <h2 class="visually-hidden">Women's clothes section</h2>
       <ul class="catalog">
         <li>
           <a href="#">
@@ -571,7 +580,10 @@
         <li>
           <div class="show-all-card">
             <div class="show-all-card__meta">
-              <h3 class="show-all-card__title">Show all Womens Clothes</h3>
+              <h3 class="show-all-card__title">
+                Show all <br />Womens <br />
+                Clothes
+              </h3>
               <a class="shop-link" href="#"
                 >SHOP NOW
                 <svg
@@ -639,11 +651,16 @@
     </section>
 
     <section class="products container">
+      <h2 class="visually-hidden">Men's clothes section</h2>
       <ul class="catalog">
         <li>
           <div class="show-all-card">
             <div class="show-all-card__meta">
-              <h3 class="show-all-card__title">Show all Men Clothes</h3>
+              <h3 class="show-all-card__title">
+                Show all <br />
+                Men <br />
+                Clothes
+              </h3>
               <a class="shop-link" href="#"
                 >SHOP NOW
                 <svg
@@ -908,6 +925,7 @@
     </section>
 
     <section class="products container">
+      <h2 class="visually-hidden">Kids' clothes section</h2>
       <ul class="catalog">
         <li>
           <a href="#">
@@ -1008,7 +1026,11 @@
         <li>
           <div class="show-all-card">
             <div class="show-all-card__meta">
-              <h3 class="show-all-card__title">Show all kids Clothes</h3>
+              <h3 class="show-all-card__title">
+                Show all <br />
+                kids <br />
+                Clothes
+              </h3>
               <a class="shop-link" href="#"
                 >SHOP NOW
                 <svg
@@ -1447,300 +1469,832 @@
       </button> -->
     </section>
 
-    <section class="dresses">
-      <ul>
+    <section class="container products">
+      <div class="header-link-wrap">
+        <h2 class="dresses__title">Dress</h2>
+        <a class="color-link color-link--grey" href="#"
+          >Shop now
+          <svg class="arrow-icon arrow-icon--accent" width="17" height="12">
+            <use href="./images/icons/icons.svg#arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="catalog">
         <li>
           <a href="#">
-            <article>
-              <picture></picture>
-              <h3>Essential dress</h3>
-              <p>Medicine</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>xs</li>
-                <li>s</li>
-                <li>m</li>
-              </ul>
-              <p>40$</p>
+            <article class="fashion-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-e463e4562b15ee37b041be384eab179c.jpg    1x,
+                    ./images/dress/Pattern-fill-e463e4562b15ee37b041be384eab179c@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-e463e4562b15ee37b041be384eab179c.webp    1x,
+                    ./images/dress/Pattern-fill-e463e4562b15ee37b041be384eab179c@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/dress/Pattern-fill-e463e4562b15ee37b041be384eab179c.jpg"
+                  alt="woman in black summer dress"
+                />
+              </picture>
+              <div class="card-meta card-meta--fashion">
+                <h3 class="card-meta__product">Essential dress</h3>
+                <p class="card-meta__brand card-meta__brand--fashion">
+                  Medicine
+                </p>
+                <div class="color-price-wrap">
+                  <ul class="colors">
+                    <li class="colors__item">
+                      <div class="color-box color-box--red"></div>
+                    </li>
+                    <li class="colors__item">
+                      <div class="color-box color-box--black"></div>
+                    </li>
+                  </ul>
+                  <ul class="sizes">
+                    <li class="sizes__item">xs</li>
+                    <li class="sizes__item">s</li>
+                    <li class="sizes__item">m</li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="new-price">40$</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </a>
         </li>
         <li>
           <a href="#">
-            <article>
-              <picture></picture>
-              <h3>Dress</h3>
-              <p>Vero Moda</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>xs</li>
-                <li>s</li>
-                <li>m</li>
-              </ul>
-              <p>89$</p>
+            <article class="fashion-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-64157ba7e66f699cda1a7@2x.jpg 1x,
+                    ./images/dress/Pattern-fill-64157ba7e66f699cda1a71f.jpg  2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-64157ba7e66f699cda1a71f.webp             1x,
+                    ./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/dress/Pattern-fill-64157ba7e66f699cda1a7@2x.jpg"
+                  alt="green dress in white line"
+                />
+              </picture>
+              <div class="card-meta card-meta--fashion">
+                <h3 class="card-meta__product">Dress</h3>
+                <p class="card-meta__brand card-meta__brand--fashion">
+                  Vero Moda
+                </p>
+                <div class="color-price-wrap">
+                  <ul class="colors">
+                    <li class="colors__item">
+                      <div class="color-box color-box--grey"></div>
+                    </li>
+                    <li class="colors__item">
+                      <div class="color-box color-box--black"></div>
+                    </li>
+                    <li class="colors__item">
+                      <div class="color-box color-box--green"></div>
+                    </li>
+                    <li class="colors__item">
+                      <div class="color-box color-box--red"></div>
+                    </li>
+                  </ul>
+                  <ul class="sizes">
+                    <li class="sizes__item">xs</li>
+                    <li class="sizes__item">s</li>
+                    <li class="sizes__item">m</li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="new-price">89$</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </a>
         </li>
         <li>
           <a href="#">
-            <article>
-              <picture></picture>
-              <h3>Dress</h3>
-              <p>Balmain</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>All</li>
-                <li></li>
-                <li></li>
-              </ul>
-              <p>39$</p>
+            <article class="fashion-card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-4db45c2ec5a06068da3d4caee5cd96dd.jpg    1x,
+                    ./images/dress/Pattern-fill-4db45c2ec5a06068da3d4caee5cd96dd@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/dress/Pattern-fill-4db45c2ec5a06068da3d4caee5cd96dd.webp    1x,
+                    ./images/dress/Pattern-fill-4db45c2ec5a06068da3d4caee5cd96dd@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/dress/Pattern-fill-4db45c2ec5a06068da3d4caee5cd96dd.jpg"
+                  alt="white dress in black print"
+                />
+              </picture>
+              <div class="card-meta card-meta--fashion">
+                <h3 class="card-meta__product">Dress</h3>
+                <p class="card-meta__brand card-meta__brand--fashion">Mango</p>
+                <div class="color-price-wrap">
+                  <ul class="colors">
+                    <li class="colors__item">
+                      <div class="color-box color-box--grey"></div>
+                    </li>
+                    <li class="colors__item">
+                      <div class="color-box color-box--black"></div>
+                    </li>
+                  </ul>
+                  <ul class="sizes">
+                    <li class="sizes__item">All</li>
+                  </ul>
+                  <div class="price-wrap">
+                    <p class="new-price">39$</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </a>
         </li>
         <li>
-          <div>
-            <h3>Show all dresses</h3>
-            <a href="#"
-              >SHOP NOW
-              <svg width="17" height="12">
-                <use href="'./images/icons"></use>
+          <div class="show-all-card">
+            <div class="show-all-card__meta">
+              <h3 class="show-all-card__title">
+                Show all <br />
+                dresses
+              </h3>
+
+              <a class="shop-link shop-link--padding-bottom" href="#"
+                >SHOP NOW
+                <svg
+                  class="arrow-icon arrow-icon--black"
+                  width="17"
+                  height="12"
+                >
+                  <use href="./images/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="show-all-list">
+              <li class="show-all-list__item">
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2.jpg    1x,
+                        ./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2.webp    1x,
+                        ./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/dress/Pattern-fill-979e65aba89b41d0882406950fbe97a2.jpg"
+                      alt="black skinny short dress"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="show-all-list__item">
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dress/Pattern-fill-bcf81f3068dff665f83459.jpg  1x,
+                        ./images/dress/Pattern-fill-bcf81f3068dff665f834@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dress/Pattern-fill-bcf81f3068dff665f83459.webp  1x,
+                        ./images/dress/Pattern-fill-bcf81f3068dff665f834@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/dress/Pattern-fill-bcf81f3068dff665f83459.jpg"
+                      alt="white summer dress"
+                    />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container baner baner--sport-margin">
+      <div class="baner-wrap baner-wrap--sport-height">
+        <div class="baner__info">
+          <h2 class="baner__title">Match</h2>
+          <p class="baner__subtite">
+            <span class="underline">Sporty aesthetics</span>
+            <span class="baner__percent">-35%</span>
+          </p>
+          <p class="baner__brands">
+            Running shoes for a walk around the city or bicyclesto the office?
+            Why not! Our stylists offer not to be afraidto mix sports things
+            with everyday ones.
+          </p>
+          <a
+            class="color-link color-link--primary color-link--lookbook"
+            href="#"
+            >Shop now
+            <svg
+              class="arrow-icon arrow-icon--baner-style"
+              width="17"
+              height="12"
+            >
+              <use href="./images/icons/icons.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/sport/Pattern-fill-d134ac0e5108c87ce845171050cce11a.jpg    1x,
+                ./images/sport/Pattern-fill-d134ac0e5108c87ce845171050cce11a@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              srcset="
+                ./images/sport/Pattern-fill-d134ac0e5108c87ce845171050cce11a.webp    1x,
+                ./images/sport/Pattern-fill-d134ac0e5108c87ce845171050cce11a@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              src="./images/sport/Pattern-fill-d134ac0e5108c87ce845171050cce11a.jpg "
+              alt="black and white sport suit"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <section
+        class="products products--bottom-line products--position container"
+      >
+        <h2 class="visually-hidden">Top products section</h2>
+        <ul class="catalog">
+          <li>
+            <a href="#">
+              <article class="fashion-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-407137293e3d441b916b3d778a95d7a5.jpg    1x,
+                      ./images/sport/Pattern-fill-407137293e3d441b916b3d778a95d7a5@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-407137293e3d441b916b3d778a95d7a5.webp    1x,
+                      ./images/sport/Pattern-fill-407137293e3d441b916b3d778a95d7a5@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/sport/Pattern-fill-407137293e3d441b916b3d778a95d7a5.jpg "
+                    alt="green snickers"
+                  />
+                </picture>
+                <div class="card-meta card-meta--fashion">
+                  <h3 class="card-meta__product">Shoes</h3>
+                  <p class="card-meta__brand card-meta__brand--fashion">
+                    Reebok — Zig Kinetica II
+                  </p>
+                  <div class="color-price-wrap">
+                    <ul class="colors">
+                      <li class="colors__item">
+                        <div class="color-box color-box--green"></div>
+                      </li>
+                    </ul>
+                    <ul class="sizes">
+                      <li class="sizes__item">38</li>
+                      <li class="sizes__item">39</li>
+                      <li class="sizes__item">40</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p class="new-price">229$</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="fashion-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-881b575653be852b6d223e00c68af5d8.jpg    1x,
+                      ./images/sport/Pattern-fill-881b575653be852b6d223e00c68af5d8@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-881b575653be852b6d223e00c68af5d8.webp    1x,
+                      ./images/sport/Pattern-fill-881b575653be852b6d223e00c68af5d8@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/sport/Pattern-fill-881b575653be852b6d223e00c68af5d8.jpg "
+                    alt="yellow long shirt"
+                  />
+                </picture>
+                <div class="card-meta card-meta--fashion">
+                  <h3 class="card-meta__product">Shirt</h3>
+                  <p class="card-meta__brand card-meta__brand--fashion">
+                    Mango — BRISA
+                  </p>
+                  <div class="color-price-wrap">
+                    <ul class="colors">
+                      <li class="colors__item">
+                        <div class="color-box color-box--grey"></div>
+                      </li>
+                      <li class="colors__item">
+                        <div class="color-box color-box--black"></div>
+                      </li>
+                    </ul>
+                    <ul class="sizes">
+                      <li class="sizes__item">xs</li>
+                      <li class="sizes__item">s</li>
+                      <li class="sizes__item">m</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p class="old-price">229$</p>
+                      <p class="new-price">199$</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="fashion-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-c8a61b168f058dc9c2dd1e9472f6a6f8.jpg    1x,
+                      ./images/sport/Pattern-fill-c8a61b168f058dc9c2dd1e9472f6a6f8@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-c8a61b168f058dc9c2dd1e9472f6a6f8.webp    1x,
+                      ./images/sport/Pattern-fill-c8a61b168f058dc9c2dd1e9472f6a6f8@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/sport/Pattern-fill-c8a61b168f058dc9c2dd1e9472f6a6f8.jpg"
+                    alt="grey slim shorts"
+                  />
+                </picture>
+                <div class="card-meta card-meta--fashion">
+                  <h3 class="card-meta__product">Shorts</h3>
+                  <p class="card-meta__brand card-meta__brand--fashion">
+                    Mango — SPORTY
+                  </p>
+                  <div class="color-price-wrap">
+                    <ul class="colors">
+                      <li class="colors__item">
+                        <div class="color-box color-box--grey"></div>
+                      </li>
+                      <li class="colors__item">
+                        <div class="color-box color-box--black"></div>
+                      </li>
+                    </ul>
+                    <ul class="sizes">
+                      <li class="sizes__item">xs</li>
+                      <li class="sizes__item">s</li>
+                      <li class="sizes__item">m</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p class="new-price">39$</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="fashion-card">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-8975502abd4de81debc20e89ac64bdf2.jpg    1x,
+                      ./images/sport/Pattern-fill-8975502abd4de81debc20e89ac64bdf2@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/sport/Pattern-fill-8975502abd4de81debc20e89ac64bdf2.webp    1x,
+                      ./images/sport/Pattern-fill-8975502abd4de81debc20e89ac64bdf2@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/sport/Pattern-fill-8975502abd4de81debc20e89ac64bdf2.jpg"
+                    alt="black sports bra"
+                  />
+                </picture>
+                <div class="card-meta card-meta--fashion">
+                  <h3 class="card-meta__product">Sports bra</h3>
+                  <p class="card-meta__brand card-meta__brand--fashion">
+                    LaBellaMafia
+                  </p>
+                  <div class="color-price-wrap">
+                    <ul class="colors">
+                      <li class="colors__item">
+                        <div class="color-box color-box--grey"></div>
+                      </li>
+                      <li class="colors__item">
+                        <div class="color-box color-box--black"></div>
+                      </li>
+                    </ul>
+                    <ul class="sizes">
+                      <li class="sizes__item">xs</li>
+                      <li class="sizes__item">s</li>
+                      <li class="sizes__item">m</li>
+                    </ul>
+                    <div class="price-wrap">
+                      <p class="new-price">19$</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <!-- <button>
+        <svg width="163" height="163">
+          <use href="./images/icons"></use>
+        </svg>
+      </button> -->
+      </section>
+    </section>
+
+    <section class="recent-posts container">
+      <div class="recent-posts-title-wrap">
+        <h2 class="baner__title">
+          REcent
+          <u
+            ><span class="baner__subtite"
+              >post & <br />
+              <span class="baner__subtite--padding">Review</span></span
+            ></u
+          >
+          on our
+        </h2>
+        <div class="instagram-link-thumb">
+          <a href="#" aria-label="instagram">
+            <svg width="24" height="24">
+              <use href="./images/icons/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <ul class="post-list">
+        <li class="post-list__item">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae.jpg    1x,
+                    ./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae.webp    1x,
+                    ./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae.jpg"
+                  alt="girl in white t-shirt and jeans"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+        <li class="post-list__item post-list__item--top">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-d22584c84ca67bd7e97bb28505ec9470.jpg    1x,
+                    ./images/posts/Pattern-fill-d22584c84ca67bd7e97bb28505ec9470@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-d22584c84ca67bd7e97bb28505ec9470.webp    1x,
+                    ./images/posts/Pattern-fill-f9f79ae0f582dc15100d49dd9c9827ae@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-d22584c84ca67bd7e97bb28505ec9470.jpg"
+                  alt="girl on the sea beach"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+        <li class="post-list__item post-list__item--bottom">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-cc994cdc80cf9bc85c8b1a12ed8bcb53.jpg    1x,
+                    ./images/posts/Pattern-fill-cc994cdc80cf9bc85c8b1a12ed8bcb53@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-cc994cdc80cf9bc85c8b1a12ed8bcb53.webp    1x,
+                    ./images/posts/Pattern-fill-cc994cdc80cf9bc85c8b1a12ed8bcb53@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-cc994cdc80cf9bc85c8b1a12ed8bcb53.jpg"
+                  alt="orange sandals in flowers"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+        <li class="post-list__item">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-a7b34107a7399dbc08f58bb9a7e4e9f4.jpg    1x,
+                    ./images/posts/Pattern-fill-a7b34107a7399dbc08f58bb9a7e4e9f4@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-a7b34107a7399dbc08f58bb9a7e4e9f4.webp    1x,
+                    ./images/posts/Pattern-fill-a7b34107a7399dbc08f58bb9a7e4e9f4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-a7b34107a7399dbc08f58bb9a7e4e9f4.jpg"
+                  alt="girl in white shirt with closed eyes"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+        <li class="post-list__item">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-15892d84130bd4f4a365c5087b98de27.jpg    1x,
+                    ./images/posts/Pattern-fill-15892d84130bd4f4a365c5087b98de27@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-15892d84130bd4f4a365c5087b98de27.webp    1x,
+                    ./images/posts/Pattern-fill-15892d84130bd4f4a365c5087b98de27@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-15892d84130bd4f4a365c5087b98de27.jpg"
+                  alt="girl in white coat"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+        <li class="post-list__item">
+          <a href="#">
+            <article>
+              <picture>
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-0ac3f5a032d39764b9f0ab2e4d7d3804.jpg    1x,
+                    ./images/posts/Pattern-fill-0ac3f5a032d39764b9f0ab2e4d7d3804@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/posts/Pattern-fill-0ac3f5a032d39764b9f0ab2e4d7d3804.webp    1x,
+                    ./images/posts/Pattern-fill-0ac3f5a032d39764b9f0ab2e4d7d3804@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./images/posts/Pattern-fill-0ac3f5a032d39764b9f0ab2e4d7d3804.jpg"
+                  alt="girl in white clothes on the sea"
+                />
+              </picture>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer container">
+      <div class="subscribe-wrap">
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/footer/Pattern-fill-e6196479c19b693162a49d4575073dd7.jpg    1x,
+                ./images/footer/Pattern-fill-e6196479c19b693162a49d4575073dd7@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              srcset="
+                ./images/footer/Pattern-fill-e6196479c19b693162a49d4575073dd7.webp    1x,
+                ./images/footer/Pattern-fill-e6196479c19b693162a49d4575073dd7@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img
+              src="./images/footer/Pattern-fill-e6196479c19b693162a49d4575073dd7.jpg"
+              alt="disigner is making a dress"
+            />
+          </picture>
+        </div>
+
+        <div>
+          <div class="present">
+            <a class="present__link" href="#">
+              <svg class="present-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#Icon3"></use>
+              </svg>
+              Get -10% on any order
+            </a>
+          </div>
+          <div class="subscribe">
+            <h3 class="subscribe__title">
+              On your first purchase <br />
+              by subscribing
+            </h3>
+            <form class="subscribe__form">
+              <input
+                class="subscribe__input"
+                type="email"
+                placeholder="YOUR E-MAIL"
+                name="email"
+              />
+              <button class="subscribe__btn" type="submit">
+                <svg
+                  class="arrow-icon arrow-icon--subscribe arrow-icon--black"
+                  width="17"
+                  height="12"
+                >
+                  <use href="./images/icons/icons.svg#arrow-right"></use>
+                </svg>
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="company-info-wrap">
+          <div class="footer__logo" aria-label="site logo bisart">
+            <a class="logo">
+              <svg width="130" height="28">
+                <use href="./images/icons/icons.svg#logo"></use>
               </svg>
             </a>
           </div>
-          <ul>
+          <div class="footer-contacts-wrap">
+            <p>
+              Book Virtual Appointment <br />
+              800.691.0952
+            </p>
+            <p>support@besart.shop</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-menu__title">HELP AND INFO</h3>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="#">Returns and complaints</a>
+            </li>
+            <li class="menu-list__item"><a href="#">DELIVERY & Payment</a></li>
+            <li class="menu-list__item"><a href="#">FAQ</a></li>
+            <li class="menu-list__item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-menu__title">Cooperation</h3>
+          <ul class="menu-list">
+            <li class="menu-list__item"><a href="#">BRAND FILES</a></li>
+            <li class="menu-list__item"><a href="#">MEDIA</a></li>
+            <li class="menu-list__item"><a href="#">About BESART</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-menu__title">Follow us</h3>
+          <ul class="socials">
             <li>
-              <a href="#"> <picture></picture></a>
+              <a href="#" aria-label="instagram">
+                <svg width="24" height="24">
+                  <use href="./images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"> <picture></picture></a>
+              <a href="#" aria-label="facebook">
+                <svg width="24" height="24">
+                  <use href="./images/icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="twitter">
+                <svg width="24" height="24">
+                  <use href="./images/icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="pinterest">
+                <svg width="24" height="24">
+                  <use href="./images/icons/icons.svg#pinterest"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section class="sports">
-      <div>
-        <h2>Match</h2>
-        <p>Sporty</p>
-        <p>aesthetics</p>
-        <span>-35%</span>
-        <p>
-          Running shoes for a walk around the city or bicyclesto the office? Why
-          not! Our stylists offer not to be afraidto mix sports things with
-          everyday ones.
-        </p>
-        <a href="#"
-          >Shop now
-          <svg width="17" height="12">
-            <use href="./images/icons/"></use>
-          </svg>
-        </a>
-      </div>
-      <div>
-        <picture></picture>
-      </div>
-      <ul>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-              <h3>Shoes</h3>
-              <p>Reebok — Zig Kinetica II</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>38</li>
-                <li>39</li>
-                <li>40</li>
-              </ul>
-              <p>229$</p>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-              <h3>shirt</h3>
-              <p>Mango — BRISA</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>All</li>
-              </ul>
-              <p>229$</p>
-              <p>129$</p>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-              <h3>shorts</h3>
-              <p>Mango — SPORTY</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>All</li>
-              </ul>
-              <p>39$</p>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-              <h3>Sports bra</h3>
-              <p>LaBellaMafia</p>
-              <ul>
-                <li></li>
-                <li></li>
-              </ul>
-              <ul>
-                <li>All</li>
-              </ul>
-              <p>29$</p>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="recent-posts">
-      <ul>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <article>
-              <picture></picture>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <div>
-        <picture></picture>
-        <a href="#">
-          <svg width="158" height="34">
-            <use href="'./images/icons"></use>
-          </svg>
-        </a>
-        <div>
-          <p>Book Virtual Appointment 800.691.0952</p>
-          <p>support@besart.shop</p>
         </div>
-
-        <div>
-          <form>
-            <label for="subscribe"></label>
-            <input type="email" id="subscribe" placeholder="YOUR E-MAIL" />
-            <button type="submit">
-              <svg width="22" height="14">
-                <use href="'./images/icons"></use>
-              </svg>
-              Subscribe
-            </button>
-          </form>
-
-          <div>
-            <div>
-              <h4>HELP AND INFO</h4>
-              <ul>
-                <li><a href="#">Returns and complaints</a></li>
-                <li><a href="#">DELIVERY & Payment</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Cooperation</h4>
-              <ul>
-                <li><a href="#">BRAND FILES</a></li>
-                <li><a href="#">DELIVERY & Payment</a></li>
-                <li><a href="#">About BESART</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Follow us</h4>
-              <ul>
-                <li aria-label="instagram">
-                  <a href="#">
-                    <svg>
-                      <use></use>
-                    </svg>
-                  </a>
-                </li>
-                <li aria-label="facebook"><a href="#"></a></li>
-                <li aria-label="twitter"><a href="#"></a></li>
-                <li aria-label="pinterest"><a href="#"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <select name="language">
-              <option value="en" selected>ENG</option>
-              <option value="dth">DTH</option>
+      </div>
+      <div class="terms-wrap">
+        <div class="lang-policy-wrap">
+          <form class="language-form">
+            <select class="dropdown" name="language">
+              <option class="dropdown__option" value="eng" selected>ENG</option>
+              <option class="dropdown__option" value="pl">PL</option>
+              <option class="dropdown__option" value="fr">FR</option>
             </select>
-
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-          </div>
-
-          <div>
-            <div>
-              <p>Made with looove</p>
-              <p>Scotty Lauren</p>
-            </div>
-          </div>
+          </form>
+          <a class="terms-link terms-link--margin" href="#"
+            ><p>Terms & Conditions</p></a
+          >
+          <a class="terms-link" href="#"><p>Privacy Policy</p></a>
+        </div>
+        <div class="made-by">
+          <p class="made-by__message">Made with looove</p>
+          <p class="made-by__owner">Scotty Lauren</p>
         </div>
       </div>
     </footer>

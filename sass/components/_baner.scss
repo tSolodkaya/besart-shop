@@ -1,9 +1,13 @@
 .baner {
   background-color: $background-color;
+  position: relative;
 
   &--lookbook-margin {
-    margin-top: 52px;
-    margin-bottom: 50px;
+    margin: 52px auto 50px auto;
+  }
+
+  &--sport-margin {
+    margin-bottom: 451px;
   }
 }
 
@@ -13,12 +17,21 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  height: 480px;
+  &--jeans-height {
+    height: 480px;
+    align-items: center;
+  }
 
   &--lookbok-height {
     height: 600px;
+    align-items: center;
+  }
+
+  &--sport-height {
+    height: 972px;
+    align-items: start;
+    padding: 100px 60px 0 60px;
   }
 }
 
@@ -43,6 +56,11 @@
   text-transform: uppercase;
   vertical-align: middle;
   margin-bottom: 14px;
+
+  &--padding {
+    display: inline-block;
+    padding-left: 120px;
+  }
 }
 
 .baner__brands {

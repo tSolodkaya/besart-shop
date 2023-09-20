@@ -1,0 +1,21 @@
+.products {
+  padding: 80px 0 100px 0;
+
+  &--bottom-line {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &--position {
+    position: absolute;
+    bottom: -40%;
+    padding: 0 60px 100px 60px;
+  }
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}

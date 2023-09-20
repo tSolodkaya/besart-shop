@@ -8,22 +8,25 @@
 }
 
 .color-link {
-  max-width: 198px;
-  margin: 0 auto;
-
   border-radius: 84px;
-
   font-weight: 500;
   text-transform: uppercase;
 
   &--primary {
     background-color: $accent-color;
     color: $background-color;
-    padding: 14px 30px 14px 20px;
+    padding: 14px 20px 14px 20px;
+    max-width: 198px;
   }
 
-  &--lookbook {
-    margin: 0;
+  &--centred {
+    margin: 0 auto;
+  }
+
+  &--grey {
+    background-color: $border-color;
+    color: $accent-color;
+    padding: 14px 20px 14px 20px;
   }
 }
 
@@ -41,5 +44,15 @@
   &--black {
     stroke: $dark-color;
     margin-left: 20px;
+  }
+
+  &--accent {
+    stroke: $accent-color;
+    margin-left: 20px;
+  }
+
+  &--subscribe {
+    margin-left: 0;
+    margin-right: 15px;
   }
 }
