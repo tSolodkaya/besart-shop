@@ -40,15 +40,17 @@
       <div class="header-line-wrap header-line-wrap--margin">
         <ul class="gender-menu">
           <li>
-            <button class="gender-menu__button gender-menu__button--active">
+            <button
+              class="gender-menu__button gender-menu__button--active hover"
+            >
               Woman
             </button>
           </li>
           <li>
-            <button class="gender-menu__button">Man</button>
+            <button class="gender-menu__button hover">Man</button>
           </li>
           <li>
-            <button class="gender-menu__button">Kids</button>
+            <button class="gender-menu__button hover">Kids</button>
           </li>
         </ul>
         <div aria-label="Site logo - bisart">
@@ -108,28 +110,28 @@
         <nav>
           <ul class="menu-navigation">
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">NEWS&Sales</a>
+              <a class="hover" href="#">NEWS&Sales</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Clothing</a>
+              <a class="hover" href="#">Clothing</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Shoes</a>
+              <a class="hover" href="#">Shoes</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Accessories</a>
+              <a class="hover" href="#">Accessories</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Bags</a>
+              <a class="hover" href="#">Bags</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Jewelry</a>
+              <a class="hover" href="#">Jewelry</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">Brands</a>
+              <a class="hover" href="#">Brands</a>
             </li>
             <li class="menu-navigation__item">
-              <a class="menu-navigation__link" href="#">All Women's</a>
+              <a class="hover" href="#">All Women's</a>
             </li>
           </ul>
         </nav>
@@ -155,7 +157,7 @@
 
     <section class="baner container">
       <div class="baner-wrap baner-wrap--jeans-height">
-        <div>
+        <div class="baner-cards-wrap">
           <a href="#">
             <article class="card-prime card-prime--left-side">
               <div class="card-prime__thumb">
@@ -253,7 +255,7 @@
             </article></a
           >
         </div>
-        <div class="baner__info baner__info--jeans">
+        <div class="baner__info baner__info--centred">
           <h2 class="baner__title">Summer women’s</h2>
           <p class="baner__subtite">
             <span class="underline">Brand Jeans</span>
@@ -274,7 +276,7 @@
             </svg>
           </a>
         </div>
-        <div>
+        <div class="baner-cards-wrap">
           <a href="#">
             <article class="card-ligth card-ligth--right-side">
               <div class="overlay"></div>
@@ -374,7 +376,7 @@
     </section>
 
     <section class="brands container">
-      <h2 class="visually-hidden">Brands section</h2>
+      <h2 class="visually-hidden">Section with a list of brans</h2>
       <ul class="brands-list">
         <li class="brands-list__item">
           <a href="#">
@@ -601,7 +603,7 @@
                 Show all <br />Womens <br />
                 Clothes
               </h3>
-              <a class="shop-link" href="#"
+              <a class="shop-link hover" href="#"
                 >SHOP NOW
                 <svg
                   class="arrow-icon arrow-icon--black"
@@ -678,7 +680,7 @@
                 Men <br />
                 Clothes
               </h3>
-              <a class="shop-link" href="#"
+              <a class="shop-link hover" href="#"
                 >SHOP NOW
                 <svg
                   class="arrow-icon arrow-icon--black"
@@ -897,8 +899,8 @@
 
     <section class="quote container">
       <h2 class="visually-hidden">Section with Product designer's qoute</h2>
-      <ul class="quote-images">
-        <li class="quote-images__item quote-images__item--translate">
+      <ul class="quote-images-list">
+        <li class="quote-images-list__item quote-images-list__item--translate">
           <picture>
             <source
               srcset="./images/quote/2(1).jpg 1x, ./images/quote/2@2x(1).jpg 2x"
@@ -911,7 +913,7 @@
             <img src="./images/quote/2(1).jpg" alt="women in blue suit" />
           </picture>
         </li>
-        <li class="quote-images__item quote-images__item--rotate">
+        <li class="quote-images-list__item quote-images-list__item--rotate">
           <picture>
             <source
               srcset="./images/quote/1(1).jpg 1x, ./images/quote/1@2x(1).jpg 2x"
@@ -1048,7 +1050,7 @@
                 kids <br />
                 Clothes
               </h3>
-              <a class="shop-link" href="#"
+              <a class="shop-link hover" href="#"
                 >SHOP NOW
                 <svg
                   class="arrow-icon arrow-icon--black"
@@ -1657,7 +1659,7 @@
                 dresses
               </h3>
 
-              <a class="shop-link shop-link--padding-bottom" href="#"
+              <a class="shop-link shop-link--padding-bottom hover" href="#"
                 >SHOP NOW
                 <svg
                   class="arrow-icon arrow-icon--black"
@@ -1773,9 +1775,7 @@
         </div>
       </div>
 
-      <section
-        class="products products--bottom-line products--position container"
-      >
+      <section class="sports sports--bottom-line">
         <h2 class="visually-hidden">Top products section</h2>
         <ul class="catalog">
           <li>
@@ -1978,14 +1978,14 @@
           </li>
         </ul>
         <!-- <button>
-        <svg width="163" height="163">
-          <use href="./images/icons"></use>
-        </svg>
-      </button> -->
+          <svg width="163" height="163">
+            <use href="./images/icons"></use>
+          </svg>
+        </button> -->
       </section>
     </section>
 
-    <section class="recent-posts container">
+    <section class="recent-posts container products">
       <div class="recent-posts-title-wrap">
         <h2 class="baner__title">
           REcent
@@ -2245,54 +2245,66 @@
               Book Virtual Appointment <br />
               800.691.0952
             </p>
-            <p>support@besart.shop</p>
+            <p>
+              <a class="hover" href="mailto:support@besart.shop"
+                >support@besart.shop</a
+              >
+            </p>
           </div>
         </div>
         <div>
           <h3 class="footer-menu__title">HELP AND INFO</h3>
           <ul class="menu-list">
             <li class="menu-list__item">
-              <a href="#">Returns and complaints</a>
+              <a class="hover" href="#">Returns and complaints</a>
             </li>
-            <li class="menu-list__item"><a href="#">DELIVERY & Payment</a></li>
-            <li class="menu-list__item"><a href="#">FAQ</a></li>
-            <li class="menu-list__item"><a href="#">Contact</a></li>
+            <li class="menu-list__item">
+              <a class="hover" href="#">DELIVERY & Payment</a>
+            </li>
+            <li class="menu-list__item"><a class="hover" href="#">FAQ</a></li>
+            <li class="menu-list__item">
+              <a class="hover" href="#">Contact</a>
+            </li>
           </ul>
         </div>
         <div>
           <h3 class="footer-menu__title">Cooperation</h3>
           <ul class="menu-list">
-            <li class="menu-list__item"><a href="#">BRAND FILES</a></li>
-            <li class="menu-list__item"><a href="#">MEDIA</a></li>
-            <li class="menu-list__item"><a href="#">About BESART</a></li>
+            <li class="menu-list__item">
+              <a class="hover" href="#">BRAND FILES</a>
+            </li>
+            <li class="menu-list__item"><a class="hover" href="#">MEDIA</a></li>
+            <li class="menu-list__item">
+              <a class="hover" href="#">About BESART</a>
+            </li>
           </ul>
         </div>
         <div>
           <h3 class="footer-menu__title">Follow us</h3>
           <ul class="socials">
-            <li>
-              <a href="#" aria-label="instagram">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="instagram">
                 <svg width="24" height="24">
                   <use href="./images/icons/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="facebook">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="facebook">
                 <svg width="24" height="24">
                   <use href="./images/icons/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="twitter">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="twitter">
                 <svg width="24" height="24">
                   <use href="./images/icons/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" aria-label="pinterest">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="pinterest">
                 <svg width="24" height="24">
                   <use href="./images/icons/icons.svg#pinterest"></use>
                 </svg>
@@ -2310,10 +2322,10 @@
               <option class="dropdown__option" value="fr">FR</option>
             </select>
           </form>
-          <a class="terms-link terms-link--margin" href="#"
+          <a href="#" class="terms-link terms-link--margin hover"
             ><p>Terms & Conditions</p></a
           >
-          <a class="terms-link" href="#"><p>Privacy Policy</p></a>
+          <a href="#" class="terms-link hover"><p>Privacy Policy</p></a>
         </div>
         <div class="made-by">
           <p class="made-by__message">Made with looove</p>

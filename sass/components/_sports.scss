@@ -1,0 +1,14 @@
+.sports {
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+
+  width: 1760px;
+  margin: 0 auto;
+
+  padding: 0 60px 80px 60px;
+
+  &--bottom-line {
+    border-bottom: 1px solid $border-color;
+  }
+}

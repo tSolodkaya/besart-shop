@@ -1,11 +1,40 @@
 .instagram-link-thumb {
-  width: 50px;
-  height: 50px;
-  background-color: $border-color;
+  position: absolute;
+  right: -79px;
+  bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
   margin-left: 30px;
+
+  transition: background-color 250ms $transition-function;
+  &:hover {
+    background-color: $border-color;
+  }
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
 
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: background-color 250ms $transition-function;
+
+  &:hover {
+    background-color: $border-color;
+  }
+}

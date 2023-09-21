@@ -15,7 +15,8 @@
 }
 
 .present {
-  padding: 12px 20px 12px 46px;
+  display: inline-block;
+  padding: 12px 20px 12px 20px;
   border: 1px solid $border-color;
   margin-bottom: 20px;
 }
@@ -47,33 +48,34 @@
   outline: none;
   border: none;
   border-bottom: 1px solid $dark-color;
-  padding-bottom: 8px;
+  padding: 10px 4px 8px 4px;
+  border-radius: 4px;
 
   color: $dark-color;
   opacity: 0.3;
   font-size: 24px;
+
+  transition: background-color 250ms $transition-function;
+
+  &:focus {
+    background-color: $background-color;
+  }
 }
 
 .subscribe__btn {
   position: absolute;
   right: 0;
   bottom: 8px;
+
   font-size: 24px;
   font-weight: 500;
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
 }
 
 .footer-menu {
   display: flex;
   align-items: start;
-  padding-top: 60px;
-  padding-left: 60px;
-  margin-bottom: 40px;
+
+  padding: 60px 60px 40px 60px;
 }
 
 .footer-contacts-wrap {
@@ -117,6 +119,7 @@
     margin-bottom: 12px;
   }
 }
+
 .made-by {
   color: $dark-color;
   opacity: 0.5;

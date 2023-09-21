@@ -3,16 +3,15 @@
   position: relative;
 
   &--lookbook-margin {
-    margin: 52px auto 50px auto;
+    margin: 72px auto 50px auto;
   }
 
   &--sport-margin {
-    margin-bottom: 451px;
+    margin-bottom: 342px;
   }
 }
 
 .baner-wrap {
-  padding: 0 80px;
   position: relative;
 
   display: flex;
@@ -20,7 +19,6 @@
 
   &--jeans-height {
     height: 480px;
-    align-items: center;
   }
 
   &--lookbok-height {
@@ -31,15 +29,21 @@
   &--sport-height {
     height: 972px;
     align-items: start;
-    padding: 100px 60px 0 60px;
+    padding-top: 100px;
   }
 }
 
+
+
 .baner__info {
   max-width: 534px;
-
-  &--jeans {
+  &--centred {
+    align-self: center;
     text-align: center;
+  }
+
+  &--top {
+    align-self: flex-start;
   }
 }
 
