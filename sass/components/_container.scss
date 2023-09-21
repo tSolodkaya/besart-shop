@@ -1,0 +1,11 @@
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  &--header-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

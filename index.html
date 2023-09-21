@@ -36,90 +36,106 @@
       </a>
     </section>
 
-    <header class="container">
-      <div class="header-wrap">
-        <div class="header-line-wrap header-line-wrap--margin">
-          <ul class="gender-buttons">
-            <li class="gender-buttons__item">
-              <button class="gender__button gender__button--active">
-                Woman
-              </button>
-            </li>
-            <li class="gender-buttons__item">
-              <button class="gender__button">Man</button>
-            </li>
-            <li class="gender-buttons__item">
-              <button class="gender__button">Kids</button>
-            </li>
-          </ul>
-          <div aria-label="site logo bisart">
-            <a class="logo">
-              <svg width="130" height="28">
-                <use href="./images/icons/icons.svg#logo"></use>
+    <header class="container container--header-padding">
+      <div class="header-line-wrap header-line-wrap--margin">
+        <ul class="gender-menu">
+          <li>
+            <button class="gender-menu__button gender-menu__button--active">
+              Woman
+            </button>
+          </li>
+          <li>
+            <button class="gender-menu__button">Man</button>
+          </li>
+          <li>
+            <button class="gender-menu__button">Kids</button>
+          </li>
+        </ul>
+        <div aria-label="Site logo - bisart">
+          <a href="/">
+            <svg width="130" height="28">
+              <use href="./images/icons/icons.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="user-menu">
+          <li
+            class="user-menu__item user-menu__item--border"
+            aria-label="wish list"
+          >
+            <a class="user-menu__link" href="#">
+              <svg width="18" height="17">
+                <use href="./images/icons/icons.svg#wish"></use>
+              </svg>
+              <p class="user-menu__count">8</p>
+            </a>
+          </li>
+
+          <li class="user-menu__item" aria-label="user profile">
+            <a class="user-menu__link" href="#">
+              <svg width="16" height="20">
+                <use href="./images/icons/icons.svg#profile"></use>
               </svg>
             </a>
-          </div>
-          <ul class="user-menu">
-            <li
-              class="user-menu__item user-menu__item--border"
-              aria-label="wish list"
-            >
-              <a class="user-menu__link" href="#">
-                <svg width="18" height="17">
-                  <use href="./images/icons/icons.svg#wish"></use>
-                </svg>
-                <p class="user-menu__count">8</p>
-              </a>
-            </li>
+          </li>
 
-            <li class="user-menu__item" aria-label="user profile">
-              <a class="user-menu__link" href="#">
-                <svg width="16" height="20">
-                  <use href="./images/icons/icons.svg#profile"></use>
-                </svg>
-              </a>
-            </li>
+          <li class="user-menu__item" aria-label="shopping cart">
+            <a class="user-menu__link" href="#">
+              <svg width="15" height="20">
+                <use href="./images/icons/icons.svg#cart"></use>
+              </svg>
+              <p class="user-menu__count">3</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-line-wrap">
+        <form class="search-form">
+          <button class="search-form__button" aria-label="search button">
+            <svg width="16" height="16">
+              <use href="./images/icons/icons.svg#search"></use>
+            </svg>
+          </button>
 
-            <li class="user-menu__item" aria-label="shopping cart">
-              <a class="user-menu__link" href="#">
-                <svg width="15" height="20">
-                  <use href="./images/icons/icons.svg#cart"></use>
-                </svg>
-                <p class="user-menu__count">3</p>
-              </a>
+          <input
+            class="search-form__input"
+            type="text"
+            aria-label="search field"
+            name="search"
+            placeholder="Search"
+          />
+        </form>
+        <nav>
+          <ul class="menu-navigation">
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">NEWS&Sales</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Clothing</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Shoes</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Accessories</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Bags</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Jewelry</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">Brands</a>
+            </li>
+            <li class="menu-navigation__item">
+              <a class="menu-navigation__link" href="#">All Women's</a>
             </li>
           </ul>
-        </div>
-        <div class="header-line-wrap">
-          <form class="search-form">
-            <button aria-label="search button">
-              <svg width="16" height="16">
-                <use href="./images/icons/icons.svg#search"></use>
-              </svg>
-            </button>
+        </nav>
 
-            <input
-              class="search-input"
-              type="text"
-              aria-label="search field"
-              name="search"
-              placeholder="Search"
-            />
-          </form>
-          <nav>
-            <ul class="menu-navigation">
-              <li class="menu-navigation__item"><a href="#">NEWS&Sales</a></li>
-              <li class="menu-navigation__item"><a href="#">Clothing</a></li>
-              <li class="menu-navigation__item"><a href="#">Shoes</a></li>
-              <li class="menu-navigation__item"><a href="#">Accessories</a></li>
-              <li class="menu-navigation__item"><a href="#">Bags</a></li>
-              <li class="menu-navigation__item"><a href="#">Jewelry</a></li>
-              <li class="menu-navigation__item"><a href="#">Brands</a></li>
-              <li class="menu-navigation__item"><a href="#">All Women's</a></li>
-            </ul>
-          </nav>
-
-          <form>
+        <form class="dropdown-form">
+          <div class="dropdown-wrap">
             <select class="dropdown" name="currency">
               <option class="dropdown__option" value="usd" selected>
                 USD &dollar;
@@ -127,12 +143,13 @@
               <option class="dropdown__option" value="eur">EUR &euro;</option>
               <option class="dropdown__option" value="gbr">GBR &pound;</option>
             </select>
-
+          </div>
+          <div class="dropdown-wrap">
             <select class="dropdown" name="information">
-              <option value="info" selected>info</option>
+              <option value="contact" selected>Info</option>
             </select>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </header>
 
@@ -1990,6 +2007,7 @@
       </div>
       <ul class="post-list">
         <li class="post-list__item">
+          <h3 class="visually-hidden">Instagram post</h3>
           <a href="#">
             <article>
               <picture>
@@ -2016,6 +2034,7 @@
           </a>
         </li>
         <li class="post-list__item post-list__item--top">
+          <h3 class="visually-hidden">Instagram post</h3>
           <a href="#">
             <article>
               <picture>
@@ -2042,6 +2061,7 @@
           </a>
         </li>
         <li class="post-list__item post-list__item--bottom">
+          <h3 class="visually-hidden">Instagram post</h3>
           <a href="#">
             <article>
               <picture>
@@ -2068,6 +2088,7 @@
           </a>
         </li>
         <li class="post-list__item">
+          <h3 class="visually-hidden">Instagram post</h3>
           <a href="#">
             <article>
               <picture>
@@ -2096,6 +2117,7 @@
         <li class="post-list__item">
           <a href="#">
             <article>
+              <h3 class="visually-hidden">Instagram post</h3>
               <picture>
                 <source
                   srcset="
@@ -2120,6 +2142,7 @@
           </a>
         </li>
         <li class="post-list__item">
+          <h3 class="visually-hidden">Instagram post</h3>
           <a href="#">
             <article>
               <picture>

@@ -1,12 +1,14 @@
 .search-form {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
-.search-input {
-  padding-left: 12px;
+.search-form__input {
+  padding: 4px 0 4px 38px;
   font-weight: 500;
   border: none;
+  border-radius: 6px;
+
+  transition: background-color 250ms $transition-function;
 
   &::placeholder {
     color: $dark-color;
@@ -16,5 +18,14 @@
   &:focus {
     border: none;
     outline: none;
+    background-color: $background-color;
   }
+}
+
+.search-form__button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
 }

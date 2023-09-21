@@ -1,4 +1,5 @@
-.user-menu {
+.user-menu,
+.user-menu__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,23 +7,17 @@
 
 .user-menu__item {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .user-menu__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 46px;
   height: 46px;
-  border: 1px solid transparent;
   border-radius: 50%;
 
-  &:hover {
+  transition: background-color 250ms $transition-function;
+
+  &:hover,
+  &:focus {
     background-color: $border-color;
   }
 }

@@ -6,8 +6,6 @@
   padding: 10px 0;
 
   background-image: url("../../images/bg-images/Bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -15,6 +13,8 @@
     background-image: url("../../images/bg-images/Bg@2x.jpg");
   }
 
+  background-repeat: no-repeat;
+  background-size: center;
   color: $liht-color;
   background-color: $dark-color;
 }

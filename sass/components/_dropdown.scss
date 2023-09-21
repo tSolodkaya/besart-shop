@@ -1,14 +1,35 @@
+.dropdown-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-wrap {
+  &:nth-child(odd) {
+    padding-right: 24px;
+    border-right: 1px solid $border-color;
+  }
+
+  &:nth-child(even) {
+    padding-left: 24px;
+  }
+}
+
 .dropdown {
-  border: none;
   background-color: transparent;
   outline: none;
+  border: none;
   border-radius: 4px;
 
   font-weight: 500;
   text-transform: uppercase;
   text-align: right;
 
-  &:hover {
-    box-shadow: $box-shadow;
+  cursor: pointer;
+  transition: background-color 250ms $transition-function;
+
+  &:hover,
+  &:focus {
+    background-color: $background-color;
   }
 }
