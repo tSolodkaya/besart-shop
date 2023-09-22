@@ -31,8 +31,10 @@
     align-self: flex-end;
   }
 
-  transition: box-shadow 250ms $transition-function;
+  transition: box-shadow 250ms $transition-function,
+    transform 250ms $transition-function;
   &:hover {
     box-shadow: $card-box-shadow;
+    transform: translateY(-5px);
   }
 }
