@@ -18,6 +18,14 @@
     z-index: 3;
   }
 
+  &:hover {
+    box-shadow: $card-box-shadow;
+    transform: translateY(-5px);
+  }
+
+  transition: box-shadow 250ms $transition-function,
+    transform 250ms $transition-function;
+
   width: 235px;
   background-color: $accent-color;
   border-radius: 5px;
@@ -40,6 +48,14 @@
     left: 0;
     top: 0;
   }
+
+  &:hover {
+    box-shadow: $card-box-shadow;
+    transform: translateY(-5px);
+  }
+
+  transition: box-shadow 250ms $transition-function,
+    transform 250ms $transition-function;
 
   width: 300px;
   border-radius: 5px;

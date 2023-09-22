@@ -1,5 +1,18 @@
 .fashion-card {
   width: 398px;
+
+  &:hover {
+    box-shadow: $card-box-shadow;
+    transform: translateY(-5px);
+  }
+
+  transition: box-shadow 250ms $transition-function,
+    transform 250ms $transition-function;
+
+  &:hover {
+    box-shadow: $card-box-shadow;
+    transform: translateY(-5px);
+  }
 }
 
 .show-all-card {
@@ -34,7 +47,10 @@
 
 .show-all-list__item {
   width: 191px;
-}
 
-.card-hover {
+  transition: box-shadow 250ms $transition-function;
+
+  &:hover {
+    box-shadow: $card-box-shadow;
+  }
 }
